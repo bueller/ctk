@@ -43,6 +43,8 @@ services:
       - APP_URL=
 
   frontend:
+    labels:
+      shipyard.route: '/'
     container_name: ctk-frontend
     restart: always
     build:
